@@ -7,7 +7,7 @@ menu = """
 
 => """
 
-saldo = 0
+saldo = 33.137,45
 limite = 500
 extrato = ""
 numero_saques = 0
