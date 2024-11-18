@@ -1,6 +1,6 @@
- print ("Olá! Bem vindo ao Banco Central de Ether!")
+print("Olá! Bem-vindo ao Banco Central de Ether!")
 
- menu = """
+menu = """
  
  [1] Depositar
  [2] Sacar
@@ -9,7 +9,7 @@
  [5] Sair
 
  => """
- saldo = 33.137,45
+saldo = 33137.45  
 limite = 500
 extrato = ""
 numero_saques = 0
@@ -33,9 +33,7 @@ while True:
         valor = float(input("Informe o valor do saque: "))
 
         excedeu_saldo = valor > saldo
-
         excedeu_limite = valor > limite
-
         excedeu_saques = numero_saques >= LIMITE_SAQUES
 
         if excedeu_saldo:
@@ -60,14 +58,15 @@ while True:
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo: R$ {saldo:.2f}")
         print("==========================================")
-        
-    elif opcao == "4"
 
-        print("O saldo na conta Consultada é ...")
-        print("F'/nSaldo: R${saldo: .2f}")
-
+    elif opcao == "4":
+        # Consultar saldo (simulando uma consulta)
+        print("\n================ CONSULTA ================")
+        print(f"Saldo consultado: R$ {saldo:.2f}")
+        print("==========================================")
 
     elif opcao == "5":
+        print("Saindo... Até logo!")
         break
 
     else:
