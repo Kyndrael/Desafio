@@ -1,3 +1,7 @@
+import json
+import re
+
+# Mensagem de boas-vindas
 print("Olá! Bem-vindo ao Banco Central de Ether!")
 
 # Menu principal
